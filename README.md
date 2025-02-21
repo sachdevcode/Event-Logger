@@ -10,22 +10,22 @@ REST API: Fetch recent events via a REST endpoint.
 
 CORS Support: Securely allow cross-origin requests from your frontend.
 
-Prerequisites
+## **Prerequisites
 Node.js (v16 or higher)
 
 Redis (running locally)
 
 ## **Installation
-## *Clone the repository:
+## **Clone the repository:
 
 git clone https://github.com/sachdevcode/Event-Logger.git
 cd websocket-event-logger/backend
 
-## ** Install dependencies:
+## Install dependencies:
 
-## ** Dependencies
+## Dependencies
 
-### ** Production Dependencies
+## Production Dependencies
 
  `express` → Web framework for Node.js.
  `ws` → WebSocket library.
@@ -33,7 +33,7 @@ cd websocket-event-logger/backend
  `cors` → Middleware for enabling CORS.
  `dotenv` → Load environment variables from a `.env` file.
 
-###  Development Dependencies
+## Development Dependencies
 
  `typescript` → TypeScript compiler.
  `ts-node-dev` → Development tool for running TypeScript files.
@@ -43,7 +43,7 @@ cd websocket-event-logger/backend
 yarn install
 Create a .env file in the root directory and add the following environment variables:
 
-## ** env
+## env
 
 PORT=4000
 REDIS_HOST=localhost
@@ -55,17 +55,17 @@ Run the project in development mode
 
 yarn run dev
 
-## **Production Mode
+## Production Mode
 
-## *Build the project:
+## Build the project:
 
 yarn run build
 
-## **Start the server:
+## Start the server:
 
 yarn start
 
-## **Project Structure
+## Project Structure
 
 src/
 ├── app.ts                # Main Express application
@@ -83,13 +83,13 @@ src/
 └── utils/                # Utility functions
     └── asyncWrapper.ts   # Async error handler wrapper
     
-## **API Endpoints
-## *WebSocket
+## API Endpoints
+## WebSocket
 URL: ws://localhost:4000
 
-## *Actions:
+## Actions:
 
-## *Subscribe to Events: 
+## Subscribe to Events: 
 
 Payload:
 
@@ -106,7 +106,7 @@ Expected Response
 
 Functionality: Subscribes the WebSocket connection to events for the specified userId.
 
-## **Log an Event:
+## Log an Event:
 
 Payload:
 
@@ -119,8 +119,8 @@ Payload:
 }
 Functionality: Logs an event for the specified userId and broadcasts it to all subscribers.
 
-## **REST API
-## *Fetch Recent Events
+## REST API
+## Fetch Recent Events
 URL: GET /api/events/recent/:userId
 
 Example: GET http://localhost:4000/api/events/recent/123
@@ -142,7 +142,7 @@ Expected Response:
   }
 ]
 
-## **Frontend Integration
+## Frontend Integration
 
 The frontend interacts with the backend using the following files:
 
@@ -150,7 +150,6 @@ change directory to client and then start the local server to start serving loca
 
 index.html
 Contains the UI for connecting to the WebSocket, sending events, and fetching recent events.
-
 
 
 
