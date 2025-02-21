@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Logger Test Client</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>WebSocket Connection</h2>
+            <div>
+                <input type="text" id="userId" placeholder="Enter User ID">
+                <button onclick="connect()">Connect</button>
+                <button onclick="disconnect()">Disconnect</button>
+            </div>
+            <div>Status: <span id="status">Disconnected</span></div>
+        </div>
+
+        <div class="card">
+            <h2>Send Event</h2>
+            <div>
+                <select id="eventType">
+                    <option value="login">Login</option>
+                    <option value="logout">Logout</option>
+                    <option value="file_open">File Open</option>
+                    <option value="file_save">File Save</option>
+                </select>
+                <button onclick="sendEvent()">Send Event</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Events</h2>
+            <div class="event-container">
+                <div class="event-box">
+                    <h3>Real-Time Events</h3>
+                    <div id="realTimeEventLog"></div>
+                </div>
+                <div class="event-box">
+                    <h3>Fetched Events</h3>
+                    <button onclick="fetchRecentEvents()">Fetch Recent Events</button>
+                    <div id="fetchedEventLog"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
