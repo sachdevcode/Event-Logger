@@ -18,7 +18,7 @@ Redis (running locally)
 ## Installation
 ## Clone the repository:
 
-git clone https://github.com/sachdevcode/Event-Logger.git
+git clone https://github.com/sachdevcode/Real-Time-Event-Logger.git
 cd websocket-event-logger/backend
 
 ## Install dependencies:
