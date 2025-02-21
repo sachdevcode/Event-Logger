@@ -1,7 +1,7 @@
-WebSocket Event Logger
+## WebSocket Event Logger
 A real-time event logging system using WebSocket and Redis for storing and retrieving events. Built with Express.js and TypeScript.
 
-Features
+## Features
 Real-Time Event Logging: Log events in real-time using WebSocket.
 
 Redis Storage: Store and retrieve events using Redis.
@@ -10,13 +10,13 @@ REST API: Fetch recent events via a REST endpoint.
 
 CORS Support: Securely allow cross-origin requests from your frontend.
 
-## **Prerequisites
+## Prerequisites
 Node.js (v16 or higher)
 
 Redis (running locally)
 
-## **Installation
-## **Clone the repository:
+## Installation
+## Clone the repository:
 
 git clone https://github.com/sachdevcode/Event-Logger.git
 cd websocket-event-logger/backend
